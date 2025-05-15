@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeta - AI Q&A</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" ... />
+
+</head>
+<body>
+  <div id="zeta-widget">
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <h1>⚡ Zeta</h1>
+        <span class="tagline">Developed by Your Team Name</span>
+      </div>
+      <button id="closeBtn" title="Close">✕</button>
+    </div>
+
+    <!-- Question Section -->
+    <div>
+      <div class="section-title">🟡 Question</div>
+      <div id="question" class="box">Loading...</div>
+    </div>
+
+    <!-- Answer Section -->
+    <div>
+      <div class="answer-header">
+        <div class="section-title">💡 AI Answer</div>
+        <div class="copy-wrapper">
+          <button id="copyBtn" class="copy-button" title="Copy answer">
+            <i class="fa fa-clone"></i>
+          </button>
+          <span id="copyTooltip" class="tooltip hidden">Copied!</span>
+        </div>
+              
+      </div>
+      <div id="answer" class="box hidden">
+        <div class="loader">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

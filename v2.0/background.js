@@ -1,4 +1,4 @@
-const API_KEY = "Rz/59s1OmKjzw3LGPm2/rC/w09DPnP2yAeGy3hr3/XJ+/7Ar";
+const API_KEY = "YOUR_API_KEY";
 
 let latestSelection = "";
 

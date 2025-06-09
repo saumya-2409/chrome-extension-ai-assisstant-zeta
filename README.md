@@ -38,16 +38,6 @@ In `background.js` and `flask_app.py`, update:
 
 ---
 
-## 🧪 Development Overview
-
-| File                      | Role                                                   |
-| ------------------------- | ------------------------------------------------------ |
-| `background.js`           | Handles context menu, keyboard shortcuts, API requests |
-| `popup.html` + `popup.js` | Renders the question/answer UI                         |
-| `flask_app.py`            | Simple Flask API proxy to securely handle AI requests  |
-
----
-
 ## 📄 License
 
 Licensed under the [MIT License](./LICENSE) — feel free to use, modify, and share.

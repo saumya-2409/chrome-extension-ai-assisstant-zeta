@@ -39,10 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
       copyIcon.classList.add("fa-clone");
 
       if (cached && cached.trim()) {
+        // ✅ Use cached answer
         answerEl.innerHTML = cached;
         answerEl.classList.remove("hidden");
         copyToClipboard(cached);
       } else {
+        // Show loader
+        console.log("2");
         answerEl.innerHTML = `
           <div class="loader">
             <div class="dot"></div>
@@ -51,7 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
         answerEl.classList.remove("hidden");
-    
+      
+        // ❌ No cached answer, fetch it
         chrome.runtime.sendMessage({ type: "fetchResponse", text }, (response) => {
           answerEl.innerHTML = response.answer || "No response received.";
           answerEl.scrollTop = 0;
